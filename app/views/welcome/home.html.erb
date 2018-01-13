@@ -1,0 +1,14 @@
+<h1>Welcome!</h1>
+
+<%= link_to "Home", welcome_home_path %>
+<%= link_to "Sign in", new_user_session_path %>
+<%= link_to "Sign up", new_user_registration_path %>
+<%= link_to "Sign out", destroy_user_session_path, :method => 'delete' %>
+
+Welcome! You have signed up successfully. A message with a confirmation link has been sent to your email address. Ple
+ase follow the link to activate your account..
+
+
+<h1><%= current_user.email if current_user %></h1>
+
+<%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %>
