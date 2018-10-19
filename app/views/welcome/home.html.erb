@@ -1,0 +1,2 @@
+<h1>Welcome, <%= user_signed_in? ? current_user.email : "Please " + link_to("Sign in", :new_user_session) + " or " + link_to("Sign up.", :new_user_registration) %></h1>
+<%= link_to "sign in with Facebook", user_facebook_omniauth_authorize_path %>
