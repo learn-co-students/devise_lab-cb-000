@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2'
+gem 'rails'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -35,7 +35,7 @@ gem 'high_voltage'
 
 group :development do
   gem 'better_errors'
-  gem 'quiet_assets'
+  #gem 'quiet_assets'
   gem 'rails_layout'
   gem 'spring-commands-rspec'
   gem 'pry'
